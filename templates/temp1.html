@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Text Analyser</title>
+
+    <link rel="stylesheet" type="text/css" href="../CSS/stylesheet1.css">
+
+    <!--<style>
+        h1{
+            color: brown;
+        }
+    </style>-->
+</head>
+<body>
+    <h1>Text Analyser</h1>
+    <h2>Enter Text here</h2>
+    <form action="/AnalysedText" method='post'> {% csrf_token %}
+
+        <textarea name='text' style="width: 1810px; height: 389px;"></textarea><br>
+        <input name="RemPunc" type="checkbox">Remove Punctuations</input><br>
+        <input name="CharCount" type="checkbox">Count Number of Characters</input><br>
+        <input name="Capitalize" type="checkbox">Capitalize</input><br>
+        <input name="Extraspace" type="checkbox">remove spaces</input><br>
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+    </form>
+</body>
+</html>
