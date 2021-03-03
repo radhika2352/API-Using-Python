@@ -25,7 +25,6 @@ def AnalysedText(request):
                 Analysed= Analysed + char
     else:
         Analysed = Analysed + djtext
-
     if djCap == "on":
         Analysed2=""
         for ch in Analysed:
